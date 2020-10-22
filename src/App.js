@@ -1,16 +1,19 @@
 import React from "react";
+import "antd/dist/result.css";
 import "./App.css";
-import Navbar from "./components/Navbar";
-import Sidebar from "./components/Sidebar";
-import Routes from "./Routes";
+import Dashboard from "./screens/Dashboard";
+import Login from "./screens/Login";
+import { Switch, Route } from "react-router-dom";
+import ProtectedRoute from "./Routes/ProtectedRoute";
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Sidebar />
-      <Routes />
-    </div>
+    <Switch>
+      <Route path="/login">
+        <Login />
+      </Route>
+      <ProtectedRoute Component={Dashboard} path="/" />
+    </Switch>
   );
 }
 

@@ -1,12 +1,12 @@
 import React from "react";
 import ScreenHeader from "../../components/ScreenHeader";
 
-const Courses = () => {
+const Home = () => {
   return (
     <div>
-      <ScreenHeader title="Courses" />
+      <ScreenHeader title="Home" />
     </div>
   );
 };
 
-export default Courses;
+export default Home;

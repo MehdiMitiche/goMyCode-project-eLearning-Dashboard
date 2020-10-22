@@ -9,8 +9,8 @@ const Sidebar = () => {
         <Item text="Dashboard" img={homeLogo} to="/" />
         <Item text="Courses" img={homeLogo} to="/courses" />
         <Item text="Students" img={homeLogo} to="/students" />
-        <Item text="Teachers" img={homeLogo} to="/" />
-        <Item text="Blog" img={homeLogo} to="/" />
+        <Item text="Teachers" img={homeLogo} to="/teachers" />
+        <Item text="Blog" img={homeLogo} to="/blog" />
       </div>
     </div>
   );

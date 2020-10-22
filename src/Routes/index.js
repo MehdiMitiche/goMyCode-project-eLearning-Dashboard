@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Switch, Route } from "react-router-dom";
-import DashboardScreen from "../screens/Dashboard";
+import HomeScreen from "../screens/Home";
 import StudentsScreen from "../screens/Students";
 import CoursesScreen from "../screens/Courses";
 
@@ -16,7 +16,7 @@ const Routes = () => {
           <CoursesScreen />
         </Route>
         <Route exact path="/">
-          <DashboardScreen />
+          <HomeScreen />
         </Route>
       </Switch>
     </div>
