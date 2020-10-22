@@ -1,0 +1,10 @@
+.home-content {
+  width: 90%;
+}
+.stats-cards-container {
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+}
+.activity-cards-container {
+  justify-content: space-evenly;
+}

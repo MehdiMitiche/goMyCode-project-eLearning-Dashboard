@@ -5,6 +5,15 @@
 * {
   font-family: "Oswald";
 }
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .navbar-container {
   background-color: var(--primary);
   width: 100%;
@@ -114,6 +123,7 @@
 .tab-container {
   width: 90%;
   justify-self: center;
+  background-color: red;
 }
 .center {
   display: flex;
