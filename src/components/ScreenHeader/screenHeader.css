@@ -1,0 +1,9 @@
+.screen-header {
+  background-color: #eef2f7;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6vh;
+  margin-bottom: 40px;
+}

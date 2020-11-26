@@ -1,0 +1,75 @@
+/*Login Screen*/
+.login-container {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../assets//pexels-pixabay-373076.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.login-content {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(62, 220, 173, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-card-container {
+  background-color: white;
+  height: fit-content;
+  min-height: 60%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 6px;
+  padding-bottom: 15px;
+}
+.login-card-header {
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+}
+.login-card-form {
+  width: 80%;
+}
+.forget-pswd {
+  color: var(--primary);
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+.login-err {
+  margin-top: 4px;
+  color: red;
+  font-size: 10px;
+  text-align: center;
+}
+.login-btn {
+  display: flex;
+  justify-content: center;
+}
+button {
+  height: 46px;
+  width: 50%;
+  font-size: 25px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: var(--primary);
+  margin-top: 30px;
+  color: white;
+  border-style: none;
+}
+@media only screen and (max-width: 1000px) {
+  .login-card-container {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .login-card-container {
+    width: 90%;
+  }
+}

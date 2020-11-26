@@ -1,0 +1,52 @@
+/*SIDEBAR STYLES*/
+.sidebar-container {
+  background-color: #3e3d3d;
+  position: fixed;
+  top: 9vh;
+  width: 22%;
+  color: white;
+  height: 91vh;
+  display: flex;
+  align-items: center;
+}
+.sidebar-content {
+  height: 80%;
+  width: 100%;
+}
+.sidebar-item {
+  display: flex;
+  height: 10vh;
+  text-decoration: none;
+  color: white;
+}
+.active {
+  background-color: #878686;
+}
+.sidebar-logo {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.sidebar-text {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 200;
+}
+@media only screen and (max-width: 1200px) {
+  .sidebar-text {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .sidebar-text {
+    display: none;
+  }
+  .sidebar-logo {
+    justify-content: center;
+  }
+}

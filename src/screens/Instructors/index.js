@@ -1,13 +1,12 @@
 import React from "react";
 import ScreenHeader from "../../components/ScreenHeader";
-import "./home.css";
 
-const Home = () => {
+const InstructorScreen = () => {
   return (
     <div className="center">
-      <ScreenHeader title="Home" />
+      <ScreenHeader title="Instructors" />
     </div>
   );
 };
 
-export default Home;
+export default InstructorScreen;
