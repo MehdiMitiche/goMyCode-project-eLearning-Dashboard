@@ -1,0 +1,24 @@
+.chapter-content {
+  margin-top: 30px;
+  width: 60vw;
+  min-height: 30vh;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #3edcad;
+  justify-content: center;
+  padding-top: 20px;
+  border-radius: 8px;
+}
+
+.chapter-input {
+  height: 8vh;
+  width: 58vw;
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 900;
+}

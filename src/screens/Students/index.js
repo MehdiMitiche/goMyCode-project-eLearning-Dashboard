@@ -7,6 +7,7 @@ const Students = () => {
     <div className="center">
       <ScreenHeader title="Students" />
       <SearchInput placeholder="search" />
+      
     </div>
   );
 };

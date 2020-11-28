@@ -1,0 +1,140 @@
+.add-course {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  height: fit-content;
+}
+.add-course-content {
+  width: 90%;
+}
+
+.add-course-input {
+  margin-top: 30px;
+  height: 8vh;
+  width: 60vw;
+  border: #3e3d3d dashed 3px;
+  font-size: 30px;
+  font-weight: 800;
+}
+.area {
+  border: #666666 dashed 3px;
+  font-size: 20px;
+}
+.course-image {
+  margin-top: 30px;
+  height: 40vh;
+  width: 60vw;
+  border: #3e3d3d dashed 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.course-description {
+  margin-top: 30px;
+  background-color: #3e3d3d;
+  height: 40vh;
+  width: 60vw;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.description-input {
+  width: 58vw;
+  height: 8vh;
+  margin-top: 30px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 900;
+}
+.description-input-long {
+  width: 58vw;
+  height: 20vh;
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 900;
+  border-radius: 6px;
+}
+.course-learn {
+  margin-top: 30px;
+  background-color: #3e3d3d;
+  height: 20vh;
+  width: 60vw;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.course-learn-input {
+  width: 25vw;
+  height: 6vh;
+  font-size: 18px;
+  border-radius: 6px;
+}
+.add-chapter {
+  margin-top: 10px;
+  width: 60vw;
+  background-color: #3edcad;
+  height: 8vh;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.add-chapter-button {
+  margin-left: 15px;
+  width: fit-content;
+  background-color: #3edcad;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+.delete-button {
+  margin-left: 15px;
+  width: fit-content;
+  padding: 10px;
+  background-color: #3edcad;
+  border: #fff solid 2px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.button-content {
+  width: 50vw;
+  display: flex;
+  justify-content: space-between;
+}
+.course-date-effort {
+  margin-top: 30px;
+  background-color: #3e3d3d;
+  height: 10vh;
+  width: 60vw;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.effort-input {
+  width: 30vw;
+  border-radius: 6px;
+  height: 6vh;
+  font-size: 18px;
+  font-weight: 900;
+}
+.date-input {
+  width: 20vw;
+  border-radius: 6px;
+  height: 6vh;
+  font-size: 18px;
+  font-weight: 900;
+}
