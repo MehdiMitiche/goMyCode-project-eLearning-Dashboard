@@ -4,11 +4,15 @@ import { Input } from "antd";
 import ChapterCard from "./ChapterCard";
 import { Button, DatePicker } from "antd";
 import { useSelector, useDispatch } from "react-redux";
+import axios from "axios";
+import { API_URL } from "../../config";
+import { useHistory } from "react-router-dom";
 const { TextArea } = Input;
 
 function AddCourse() {
+  const history = useHistory();
   const dispatch = useDispatch();
-  const { course, chapter } = useSelector((state) => state.addCourse);
+  const { course, chapter, loading } = useSelector((state) => state.addCourse);
 
   const onChangeForm = (i, key, value) => {
     dispatch({
@@ -35,6 +39,40 @@ function AddCourse() {
       payload: { chapter: chapter.filter((elem, i) => i !== id) },
     });
     console.log(id);
+  };
+
+  const onSubmit = async () => {
+    dispatch({
+      type: "SET_STATE",
+      payload: { error: "", loading: true },
+    });
+    const response = await axios
+      .post(
+        `${API_URL}/course`,
+        {
+          ...course,
+          chapters: chapter,
+          instructorId: "5fcad83b8ea7bd3ba0593547",
+        },
+        {
+          headers: {
+            authorization: localStorage.getItem("e-learning-token-instructor"),
+          },
+        }
+      )
+      .catch((err) => {
+        return dispatch({
+          type: "SET_STATE",
+          payload: { error: "error occured", loading: false },
+        });
+      });
+    dispatch({
+      type: "SET_STATE",
+      payload: { error: "", loading: false },
+    });
+    if (response.status === 201) {
+      history.push("/");
+    }
   };
   return (
     <div className="add-course">
@@ -104,6 +142,7 @@ function AddCourse() {
 
         {chapter.map((champs, i) => (
           <ChapterCard
+            champs={champs}
             deleteQuestion={() => deleteQuestion(i)}
             onChangeForm={onChangeForm}
             key={i}
@@ -136,6 +175,7 @@ function AddCourse() {
           </Button>
         </div>
         <Button
+          loading={loading}
           style={{
             height: "10vh",
             borderRadius: "6px",
@@ -146,6 +186,7 @@ function AddCourse() {
             color: "#fff",
             marginBottom: "30px",
           }}
+          onClick={onSubmit}
         >
           Submit course
         </Button>

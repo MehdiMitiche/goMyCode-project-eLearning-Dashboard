@@ -19,6 +19,8 @@ const initialState = {
       delete: false,
     },
   ],
+  error: "",
+  loading: false,
 };
 
 const AddCourse = (state = initialState, action) => {

@@ -28,6 +28,7 @@ const Login = () => {
         email: data.email,
         password: data.password,
       });
+      console.log(response);
       if (!response || response.status !== 200)
         dispatch({
           type: SET_STATE,
@@ -35,7 +36,7 @@ const Login = () => {
           payload: { loading: false, error: "Error, please try again!" },
         });
       console.log(response);
-      localStorage.setItem("e-learning-token", response.data.token);
+      localStorage.setItem("e-learning-token-instructor", response.data.token);
       history.push("/");
     } catch (error) {
       console.log(error.message);
@@ -43,7 +44,7 @@ const Login = () => {
         type: SET_STATE,
         payload: {
           loading: false,
-          error: "Error, please try again!",
+          error: "Error, please try agai!",
         },
       });
     }

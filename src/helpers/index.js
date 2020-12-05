@@ -2,7 +2,7 @@ import jwt from "jsonwebtoken";
 import { JWT_SECRET } from "../config";
 
 const isLoggedIn = () => {
-  const token = localStorage.getItem("e-learning-token");
+  const token = localStorage.getItem("e-learning-token-instructor");
   if (!token) return false;
   try {
     const verified = jwt.verify(token, JWT_SECRET);

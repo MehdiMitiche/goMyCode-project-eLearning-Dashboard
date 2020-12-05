@@ -1,6 +1,5 @@
 import React from "react";
 import "./cards.css";
-import { FaBook } from "react-icons/fa";
 
 export const CardSmall = ({ icon, number, total }) => {
   return (
@@ -21,34 +20,58 @@ export const CardBig = ({ title, img, creator, course }) => {
 
       <div className="details">
         <div className="img-details">{img}</div>
-        <div className="details-container">
-          <div className="creator">creator</div>
-          <div className="course-name">course-name</div>
-        </div>
+        {title === "Activity" ? (
+          <div className="details-container">
+            <div className="creator">Moh</div>
+            <div className="course-name">Started a new Course</div>
+          </div>
+        ) : (
+          <div className="details-container">
+            <div className="creator">Introduction to JS</div>
+          </div>
+        )}
       </div>
 
       <div className="details">
         <div className="img-details">{img}</div>
-        <div className="details-container">
-          <div className="creator">creator</div>
-          <div className="course-name">course-name</div>
-        </div>
+        {title === "Activity" ? (
+          <div className="details-container">
+            <div className="creator">Mouna</div>
+            <div className="course-name">Liked a new Course</div>
+          </div>
+        ) : (
+          <div className="details-container">
+            <div className="creator">Master Node JS</div>
+          </div>
+        )}
       </div>
 
       <div className="details">
         <div className="img-details">{img}</div>
-        <div className="details-container">
-          <div className="creator">creator</div>
-          <div className="course-name">course-name</div>
-        </div>
+        {title === "Activity" ? (
+          <div className="details-container">
+            <div className="creator">Younes</div>
+            <div className="course-name">Created a new Course</div>
+          </div>
+        ) : (
+          <div className="details-container">
+            <div className="creator">Welcome to REACT</div>
+          </div>
+        )}
       </div>
 
       <div className="details">
         <div className="img-details">{img}</div>
-        <div className="details-container">
-          <div className="creator">creator</div>
-          <div className="course-name">course-name</div>
-        </div>
+        {title === "Activity" ? (
+          <div className="details-container">
+            <div className="creator">Mohamed</div>
+            <div className="course-name">Started a new Course</div>
+          </div>
+        ) : (
+          <div className="details-container">
+            <div className="creator">Introduction to HTML</div>
+          </div>
+        )}
       </div>
     </div>
   );
